@@ -1,8 +1,18 @@
+import { Route, Switch } from "react-router";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/Home";
 
-function App() {
+const App = () => {
   return (
-   <>hello</>
+    <>
+      <Navbar />
+      <Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+      </Switch>
+    </>
   );
-}
+};
 
 export default App;
