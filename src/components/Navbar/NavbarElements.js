@@ -10,7 +10,6 @@ export const NavbarWrapper = styled.nav`
   background: var(--white);
   box-shadow: ${(props) =>
     props.$scrolledNav ? "1px 1px 10px 1px rgba(0,0,0, .2)" : ""};
-  /* transition: background-color var(--transition); */
 
   @media screen and (max-width: 750px) {
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
@@ -80,7 +79,7 @@ export const NavbarNavLinkR = styled(NavLink)`
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--black);
-  /* color: ${(props) => (props.$footerLink ? "var(--light-gray)" : "")}; */
+  color: ${(props) => (props.$footerLink ? "var(--light-gray)" : "")};
   transition: color var(--transition);
 
   &:hover {
