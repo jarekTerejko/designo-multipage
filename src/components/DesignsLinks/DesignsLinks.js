@@ -20,7 +20,7 @@ const linksData = [
     textPrimary: "web design",
     textSecondary: "view projects",
     arrowIcon: RightArrowIcon,
-    path: "/web-disgn",
+    path: "/web-design",
   },
   {
     img: AppDesignImg,
