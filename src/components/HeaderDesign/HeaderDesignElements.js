@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderDesignWrapper = styled.header`
   margin-top: 15.8rem;
-  margin-bottom: 30rem;
+  margin-bottom: 16rem;
 `;
 export const HeaderDesignInnnerWrapper = styled.div`
   position: relative;
@@ -15,7 +15,7 @@ export const HeaderDesignInnnerWrapper = styled.div`
   border-radius: 1.5rem;
   padding: 7rem 9rem;
   overflow: hidden;
-  min-height: 29.2rem;
+  min-height: 26.7rem;
 
   &::before {
     content: "";

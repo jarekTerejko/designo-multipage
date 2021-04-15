@@ -16,6 +16,7 @@ const HeaderDesign = ({ heading, descriptionText }) => {
             style={{
               marginBottom: "20px",
               fontSize: "42px",
+              textAlign: "center",
             }}
           >
             {heading}
