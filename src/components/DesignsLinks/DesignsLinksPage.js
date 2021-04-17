@@ -7,10 +7,10 @@ import {
   DesignsLinksLinkTextSecondaryWrapper,
   DesignsLinksLinkTextsWrapper,
   DesignsLinksWrapper,
-} from "../DesignsLinks/DesignsLinksElements";
+} from "./DesignsLinks/DesignsLinksElements";
 import { ImageEl } from "../Image/Image";
 
-const DesignsLinks = ({ linksData, designsLinksPage }) => {
+const DesignsLinksPage = ({ linksData, designsLinksPage }) => {
   return (
     <>
       <DesignsLinksWrapper designsLinksPage={designsLinksPage}>
@@ -46,4 +46,4 @@ const DesignsLinks = ({ linksData, designsLinksPage }) => {
   );
 };
 
-export default DesignsLinks;
+export default DesignsLinksPage;
