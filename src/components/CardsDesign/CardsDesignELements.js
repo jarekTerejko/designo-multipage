@@ -24,6 +24,8 @@ export const CardsDesignCardDescriptionText = styled.p`
   color: var(--black);
   transition: var(--transition);
   text-align: center;
+  text-align: ${props => (props.abilitiesSection ? "left" : "")};
+  margin-bottom: ${props => (props.abilitiesSection ? "3rem" : '')};
 `;
 
 export const CardsDesignCardTextContainer = styled.div`
