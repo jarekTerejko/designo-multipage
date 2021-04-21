@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import WebDesign from "./pages/WebDesign";
 import AppDesign from "./pages/AppDesign";
 import GraphicDesign from "./pages/GraphicDesign";
+import OurCompany from "./pages/OurCompany";
 
 const App = () => {
   return (
@@ -16,13 +17,16 @@ const App = () => {
         </Route>
         <Route path="/web-design" exact>
           <WebDesign />
-          </Route>
+        </Route>
         <Route path="/app-design" exact>
           <AppDesign />
-          </Route>
+        </Route>
         <Route path="/graphic-design" exact>
           <GraphicDesign />
-          </Route>
+        </Route>
+        <Route path="/our-company" exact>
+          <OurCompany />
+        </Route>
       </Switch>
       <Footer />
     </>
