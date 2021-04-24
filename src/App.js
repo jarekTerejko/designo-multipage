@@ -7,6 +7,7 @@ import AppDesign from "./pages/AppDesign";
 import GraphicDesign from "./pages/GraphicDesign";
 import OurCompany from "./pages/OurCompany";
 import Locations from "./pages/Locations";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -30,6 +31,9 @@ const App = () => {
         </Route>
         <Route path="/locations" exact>
           <Locations />
+        </Route>
+        <Route path="/contact" exact>
+          <Contact />
         </Route>
       </Switch>
       <Footer />
