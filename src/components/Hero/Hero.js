@@ -11,12 +11,10 @@ const Hero = () => {
     <HeroWrapper bgPattern={BgPattern}>
       <ContainerEl>
         <HeroInnerWrapper cicrcleImg={CicrcleImg} heroPhoneImg={HeroPhoneImg}>
-          <Heading style={{ maxWidth: "500px", marginBottom: "30px" }}>
+          <Heading homepage>
             Award-winning custom designs and digital branding solutions
           </Heading>
-          <DescriptionTextLight
-            style={{ maxWidth: "420px", marginBottom: "30px" }}
-          >
+          <DescriptionTextLight homepage>
             With over 10 years in the industry, we are experienced in creating
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
