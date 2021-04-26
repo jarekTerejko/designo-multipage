@@ -21,6 +21,8 @@ const DesignsLinks = ({ linksData, designsLinksPage }) => {
                 <DesignsLinksLink
                   key={link.path}
                   $bgImg={link.img}
+                  $bgImgT={link.imgT}
+                  $bgImgM={link.imgM}
                   $bgLargeImg={link.imgLarge}
                   to={link.path}
                   $small={link.imgLarge ? false : true}

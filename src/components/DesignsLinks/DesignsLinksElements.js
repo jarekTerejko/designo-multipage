@@ -28,9 +28,25 @@ export const DesignsLinksLink = styled(Link)`
   color: var(--white);
   transition: color var(--transition), background-size var(--transition);
 
+  @media screen and (max-width: 768px) {
+    background-image: ${(props) =>
+      `linear-gradient(to bottom, rgba(0,0,0, .1), rgba(0,0,0, .9)), url(${props.$bgImgT})`};
+    padding-top: calc(
+      200 / 689 * 100%
+    ); // (img-height / img-width * container-width)
+  }
+
+  @media screen and (max-width: 440px) {
+    background-image: ${(props) =>
+      `linear-gradient(to bottom, rgba(0,0,0, .1), rgba(0,0,0, .9)), url(${props.$bgImgM})`};
+    padding-top: calc(
+      250 / 327 * 100%
+    ); // (img-height / img-width * container-width)
+  }
+
   &:hover,
   &:focus {
-    color: var(--peach);
+    /* color: var(--peach); */
     background-size: 105%;
   }
 
@@ -44,10 +60,14 @@ export const DesignsLinksLink = styled(Link)`
 
     @media screen and (max-width: 768px) {
       grid-row: unset;
-      background-image: ${(props) =>
-        `linear-gradient(to bottom, rgba(0,0,0, .1), rgba(0,0,0, .9)), url(${props.$bgImg})`};
       padding-top: calc(
-        308 / 541 * 100%
+        200 / 689 * 100%
+      ); // (img-height / img-width * container-width)
+    }
+
+    @media screen and (max-width: 440px) {
+      padding-top: calc(
+        250 / 327 * 100%
       ); // (img-height / img-width * container-width)
     }
   }
@@ -62,6 +82,15 @@ export const DesignsLinksLink = styled(Link)`
     @media screen and (max-width: 768px) {
       grid-row: unset;
       grid-column: unset;
+      padding-top: calc(
+        200 / 689 * 100%
+      ); // (img-height / img-width * container-width)
+    }
+
+    @media screen and (max-width: 440px) {
+      padding-top: calc(
+        250 / 327 * 100%
+      ); // (img-height / img-width * container-width)
     }
   }
 
@@ -75,6 +104,15 @@ export const DesignsLinksLink = styled(Link)`
     @media screen and (max-width: 768px) {
       grid-row: unset;
       grid-column: unset;
+      padding-top: calc(
+        200 / 689 * 100%
+      ); // (img-height / img-width * container-width)
+    }
+
+    @media screen and (max-width: 440px) {
+      padding-top: calc(
+        250 / 327 * 100%
+      ); // (img-height / img-width * container-width)
     }
   }
 `;
@@ -99,10 +137,22 @@ export const DesignsLinksLinkTextPrimary = styled.span`
   font-size: 4rem;
   letter-spacing: 2px;
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 540px) {
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 2rem;
+  }
 `;
 export const DesignsLinksLinkTextSecondary = styled.span`
   letter-spacing: 6px;
   margin-right: 2rem;
+
+  @media screen and (max-width: 300px) {
+    font-size: 1.2rem;
+  }
 `;
 export const DesignsLinksLinkTextSecondaryWrapper = styled.div`
   display: flex;
