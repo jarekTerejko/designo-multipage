@@ -19,17 +19,12 @@ const ContactBanner = () => {
         <ContainerEl>
           <ContactBannerInnerWrapper fiveCirclesBg={FiveCirclesBg}>
             <ContactBannerTextWrapper>
-              <Heading
-                as="h2"
-                style={{
-                  maxWidth: "400px",
-                  marginBottom: "10px",
-                  fontSize: "42px",
-                }}
-              >
+              <Heading contactBanner as="h2">
                 Let's talk about your project
               </Heading>
-              <DescriptionTextLight style={{ maxWidth: "480px" }}>
+              <DescriptionTextLight contactBanner 
+              // style={{ maxWidth: "480px" }}
+              >
                 Ready to take it to the next level? Contact us today and find
                 out how our expertise can help your business grow.
               </DescriptionTextLight>

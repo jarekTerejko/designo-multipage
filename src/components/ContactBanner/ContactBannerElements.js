@@ -16,8 +16,17 @@ export const ContactBannerInnerWrapper = styled.div`
   justify-content: space-between;
   background: var(--peach);
   border-radius: 1.5rem;
-  padding: 7rem 9rem;
+  padding: 5rem 9rem;
   overflow: hidden;
+
+  @media screen and (max-width: 930px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    text-align: center;
+    margin: 0 auto;
+  }
 
   &::before {
     content: "";
