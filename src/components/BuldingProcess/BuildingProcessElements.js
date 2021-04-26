@@ -15,19 +15,44 @@ export const BuildingProcessWrapper = styled.section`
     top: 120px;
     right: 0;
     z-index: -1;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 `;
 
 export const BuildingProcessCols = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
   gap: 30px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  @media screen and (max-width: 615px) {
+    gap: 70px;
+  }
 `;
 
 export const BuildingProcessCol = styled.div`
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
+
+  @media screen and (max-width: 768px) {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: max-content 1fr;
+    text-align: left;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 615px) {
+    display: block;
+    text-align: center;
+  }
 `;
 
 export const BuildingProcessImgWrapper = styled.div`
@@ -41,9 +66,22 @@ export const BuildingProcessImgWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+  }
+  
+  @media screen and (max-width: 615px) {
+    margin-bottom: 4rem;
+  }
 `;
 
-export const BuildingProcessTextWrapper = styled.div``;
+export const BuildingProcessTextWrapper = styled.div`
+  @media screen and (max-width: 615px) {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+`;
 
 export const BuildingProcessColTitle = styled.h3`
   font-size: 2rem;
