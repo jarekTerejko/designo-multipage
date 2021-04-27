@@ -21,15 +21,34 @@ export const HeroAlternateWrapper = styled.header`
 export const HeroAlternateInnerWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  /* min-height: 48rem; */
   background: var(--peach);
   border-radius: 1.5rem;
   overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const HeroAlternateColText = styled.div`
   padding: 12rem 9rem;
   grid-column: 1/5;
+
+  @media screen and (max-width: 1030px) {
+    padding: 10rem 7rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    padding: 7rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-row: 2/3;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 5rem 2rem;
+  }
 `;
 
 export const HeroAlternateColPhoto = styled.div`
@@ -41,4 +60,21 @@ export const HeroAlternateColPhoto = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media screen and (max-width: 768px) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: calc(
+      320 / 689 * 100%
+    ); // (img-height / img-width * container-width)
+    background: ${(props) => `url(${props.HeroImgT})`};
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and (max-width: 415px) {
+    padding-top: calc(
+      320 / 375 * 100%
+    ); // (img-height / img-width * container-width)
+  }
 `;
