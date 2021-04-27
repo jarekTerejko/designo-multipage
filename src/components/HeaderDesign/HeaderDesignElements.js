@@ -13,7 +13,7 @@ export const HeaderDesignInnnerWrapper = styled.div`
   flex-direction: column;
   background: var(--peach);
   border-radius: 1.5rem;
-  padding: 7rem 9rem;
+  padding: 3rem 2rem;
   overflow: hidden;
   min-height: 26.7rem;
 
