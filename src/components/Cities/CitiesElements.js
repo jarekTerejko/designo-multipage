@@ -11,6 +11,10 @@ export const CitiesInnerWrapper = styled.div`
   column-gap: 40px;
   row-gap: 80px;
   place-items: center;
+
+  @media screen and (max-width: 300px) {
+    grid-template-columns: 1fr;
+  }
 `;
 export const CitiesCityCol = styled.div`
   text-align: center;
