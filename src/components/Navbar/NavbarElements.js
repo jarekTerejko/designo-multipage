@@ -90,6 +90,10 @@ export const NavbarNavLinkR = styled(NavLink)`
     color: var(--peach);
   }
 
+  @media screen and (max-width: 630px) {
+    margin-bottom: ${(props) => (props.$footerLink ? "1rem" : "")};
+  }
+
   @media screen and (max-width: 550px) {
     font-size: 1.4rem;
   }
