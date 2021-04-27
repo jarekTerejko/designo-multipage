@@ -23,9 +23,9 @@ const Abilities = ({
         <AbilitiesInnerWrapper>
           <AbilitiesWrapperColPhoto
             first={first}
-            TalentImgD={imgD}
-            TalentImgM={imgM}
-            TalentImgT={imgT}
+            ImgD={imgD}
+            ImgM={imgM}
+            ImgT={imgT}
           />
           <AbilitiesColText first={first}>
             <Heading as="h2" abilitiesSection>
