@@ -6,8 +6,12 @@ export const CardsDesignWrapper = styled.main`
 `;
 export const CardsDesignInnerWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 20px;
+
+  @media screen and (max-width: 310px) {
+    grid-template-columns: 1fr;
+  }
 `;
 export const CardsDesignCardTitle = styled.h3`
   letter-spacing: 5px;
@@ -24,8 +28,8 @@ export const CardsDesignCardDescriptionText = styled.p`
   color: var(--black);
   transition: var(--transition);
   text-align: center;
-  text-align: ${props => (props.abilitiesSection ? "left" : "")};
-  margin-bottom: ${props => (props.abilitiesSection ? "3rem" : '')};
+  text-align: ${(props) => (props.abilitiesSection ? "left" : "")};
+  margin-bottom: ${(props) => (props.abilitiesSection ? "3rem" : "")};
 `;
 
 export const CardsDesignCardTextContainer = styled.div`
