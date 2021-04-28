@@ -62,8 +62,8 @@ const Navbar = () => {
             <NavbarNavItem>
               <NavbarNavLinkR
                 to="/our-company"
-               $isOpen={isOpen}
-                onClick={handleMenu}
+                $isOpen={isOpen}
+                onClick={closeMenu}
                 // exact={true}
               >
                 our company
@@ -73,7 +73,7 @@ const Navbar = () => {
               <NavbarNavLinkR
                 to="/locations"
                 $isOpen={isOpen}
-                onClick={handleMenu}
+                onClick={closeMenu}
               >
                 locations
               </NavbarNavLinkR>
@@ -82,7 +82,7 @@ const Navbar = () => {
               <NavbarNavLinkR
                 to="/contact"
                 $isOpen={isOpen}
-                onClick={handleMenu}
+                onClick={closeMenu}
               >
                 contact
               </NavbarNavLinkR>
