@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const HeroContactWrapper = styled.header`
   margin-top: 15.8rem;
   margin-bottom: 16rem;
+
+  @media screen and (max-width: 450px) {
+    background: var(--peach);
+  }
 `;
 
 export const HeroContactInnerWrapper = styled.div`
@@ -13,6 +17,18 @@ export const HeroContactInnerWrapper = styled.div`
   border-radius: 1.5rem;
   padding: 5rem 9rem 4rem 9rem;
   gap: 20px;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 5rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    padding: 5rem 1rem;
+  }
 `;
 
 export const HeroContactColText = styled.div`
@@ -21,8 +37,13 @@ export const HeroContactColText = styled.div`
   justify-content: center;
   grid-column: 1/5;
   padding-right: 8rem;
-`;
 
-export const HeroContactColForm = styled.div`
-  grid-column: 5/8;
+  @media screen and (max-width: 768px) {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+  
+  @media screen and (max-width: 450px) {
+    text-align: center;
+  }
 `;
