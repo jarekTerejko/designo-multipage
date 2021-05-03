@@ -9,9 +9,8 @@ export const AbilitiesInnerWrapper = styled.div`
   border-radius: 1.5rem;
   overflow: hidden;
 
-  @media screen and (max-width: 1030px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    grid-column: 1/2;
   }
 `;
 
@@ -36,6 +35,7 @@ export const AbilitiesWrapperColPhoto = styled.div`
     /* background-repeat: no-repeat; */
     background-position: center;
   }
+  
   @media screen and (max-width: 415px) {
     padding-top: calc(
       320 / 375 * 100%
