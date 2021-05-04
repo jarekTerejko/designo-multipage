@@ -7,8 +7,10 @@ import TalentImgM from "../images/about/mobile/image-world-class-talent.jpg";
 import DealImgD from "../images/about/desktop/image-real-deal.jpg";
 import DealImgT from "../images/about/tablet/image-real-deal.jpg";
 import DealImgM from "../images/about/mobile/image-real-deal.jpg";
+import { motion } from "framer-motion";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
-const OurCompany = () => {
+const OurCompany = ({ containerVariants }) => {
   const talentData = {
     heading: "World-class talent",
     paragraphOne:
@@ -25,7 +27,13 @@ const OurCompany = () => {
       "We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, we inspire audiences to take action and drive real results.",
   };
   return (
-    <>
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
+      <ScrollToTop />
       <HeroAlternate />
       <Abilities
         first
@@ -45,7 +53,7 @@ const OurCompany = () => {
         paragraphOne={dealData.paragraphOne}
         paragraphTwo={dealData.paragraphTwo}
       />
-    </>
+    </motion.div>
   );
 };
 
